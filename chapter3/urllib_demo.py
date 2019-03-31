@@ -46,6 +46,7 @@ def request():
     req = urllib.request.Request(url, data=data, headers=headers, method='POST')
     response = urllib.request.urlopen(req)
     print(json.loads(response.read()))
+    # print(json.dumps(json.loads(response.read()), indent=2))
 
 # request()
 
