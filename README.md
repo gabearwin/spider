@@ -19,3 +19,9 @@ Python3 网络爬虫实战
 - 使用 hashlib.md5 将图片内容值信息作为文件名
 - 写入文件
 - 使用 multiprocessing.pool 多线程下载
+
+### 淘宝搜索页商品爬取
+- [代码链接](chapter7/taobao.py)
+- 使用 selenium 自动搜索和翻页
+- 使用 pyquery 库解析 DOM 节点数据
+- 使用 pymongo 库存储数据到 MongoDB
