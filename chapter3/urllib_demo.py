@@ -209,3 +209,5 @@ def robot():
     print(rp.can_fetch('*', 'https://www.jianshu.com/search?q=python&page=1&type=note'))
 
 robot()
+
+# https://docs.python.org/zh-cn/3/library/urllib.request.html

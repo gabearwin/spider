@@ -25,3 +25,11 @@ Python3 网络爬虫实战
 - 使用 selenium 自动搜索和翻页
 - 使用 pyquery 库解析 DOM 节点数据
 - 使用 pymongo 库存储数据到 MongoDB
+
+### 软院信息化平台信息爬取
+- [代码链接](chapter8/ustc_sse/ustc_sse.py)
+- 使用 selenium 自动登录，切换 frame
+- 使用 pyquery 库解析 DOM 节点数据
+- ~~使用 tesserocr 库识别验证码~~ 从 Cookie 中获取验证码
+- 使用 pymongo 库存储数据到 MongoDB
+- 使用 smtplib 发送邮件
