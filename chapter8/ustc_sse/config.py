@@ -6,6 +6,7 @@ MONGO_DB = 'ustc'
 MONGO_COLLECTION = 'news'
 
 # 邮箱发信相关配置
+MAIL_NOTIFICATION = True
 MAIL_HOST = "smtp.163.com"  # 设置服务器
 MAIL_USER = "***@163.com"  # 用户名
 MAIL_PASS = "***"  # 授权码

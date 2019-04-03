@@ -3,6 +3,7 @@
 import pymongo
 import requests
 from pyquery import PyQuery as pq
+from multiprocessing import Process
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -55,8 +56,6 @@ def login():
         browser.switch_to.frame('MainFrame')
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#global_LeftPanel_UpRightPanel_ContentPanel2_ContentPanel3_content')))
         print("登录成功,准备爬取最新通知")
-        # print(browser.get_cookies())
-        fetch_all_news()
     except Exception as e:
         print(e.args)
         login()
@@ -116,10 +115,11 @@ def save_to_mongo(news):
             print('MongoDB中已存在%s这条数据' % news.get('id'))
         else:
             collection.insert_one(news)
-            send_email(MAIL_TO, news)
-            print('存储到MongoDB成功')
+            print('通知%s存储到MongoDB成功' % news.get('id'))
+            if MAIL_NOTIFICATION: Process(target=send_email, args=(MAIL_TO, news)).start()
     except Exception as e:
         print('存储到MongoDB失败', e.args)
 
 if __name__ == '__main__':
     login()
+    fetch_all_news()
