@@ -20,6 +20,12 @@ Python3 网络爬虫实战
 - 写入文件
 - 使用 multiprocessing.pool 多线程下载
 
+### 豆瓣图书按照标签爬取图书信息
+- [代码链接](chapter6/douban.py)
+- 使用 request 库请求页面
+- 使用 pyquery 库解析 DOM 节点数据
+- 写入 CSV 文件
+
 ### 淘宝搜索页商品爬取
 - [代码链接](chapter7/taobao.py)
 - 使用 selenium 自动搜索和翻页
