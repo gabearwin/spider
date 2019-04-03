@@ -39,3 +39,10 @@ Python3 网络爬虫实战
 - ~~使用 tesserocr 库识别验证码~~ 从 Cookie 中获取验证码
 - 使用 pymongo 库存储数据到 MongoDB
 - 使用 smtplib 发送邮件
+
+### IP代理池 *
+- [代码链接](https://github.com/gabearwin/ProxyPool)
+- 使用 request、pyquery 库请求并解析免费 IP 代理
+- 使用 Redis 有序集合保存 IP 信息，并给 IP 打分
+- 使用 aiohttp 异步请求测试 IP 代理是否可用
+- 使用 flask 提供轻量级 API 服务
