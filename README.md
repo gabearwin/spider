@@ -46,3 +46,11 @@ Python3 网络爬虫实战
 - 使用 Redis 有序集合保存 IP 信息，并给 IP 打分
 - 使用 aiohttp 异步请求测试 IP 代理是否可用
 - 使用 flask 提供轻量级 API 服务
+
+### 搜狗微信文章爬取
+- [代码链接](weixin/spider.py)
+- 使用 request、pyquery 库请求并解析网页
+- 使用 IP 代理池提供的代理进行网络请求
+- 自定义请求结构体，拓展代理、回调函数等功能
+- 使用 Redis 存储请求结构体队列，使用 pickle 将对象序列化/反序列化
+- 使用 MySQL 存储微信文章
