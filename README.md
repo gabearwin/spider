@@ -6,7 +6,7 @@ Python3 网络爬虫实战
 - re库，正则获取DOM节点数据
 - 写入文件
 
-### 新浪微博爬取
+### 新浪个人微博爬取
 - [代码链接](chapter6/weibo.py)
 - 直接分析使用 Ajax 返回的 JSON 数据
 - 使用 pyquery 库解析 DOM 节点数据
@@ -32,7 +32,7 @@ Python3 网络爬虫实战
 - 使用 pyquery 库解析 DOM 节点数据
 - 使用 pymongo 库存储数据到 MongoDB
 
-### 软院信息化平台信息爬取
+### 软院信息化平台通知爬取
 - [代码链接](chapter8/ustc_sse/ustc_sse.py)
 - 使用 selenium 自动登录，切换 frame
 - 使用 pyquery 库解析 DOM 节点数据
@@ -54,3 +54,9 @@ Python3 网络爬虫实战
 - 自定义请求结构体，拓展代理、回调函数等功能
 - 使用 Redis 存储请求结构体队列，使用 pickle 将对象序列化/反序列化
 - 使用 MySQL 存储微信文章
+
+### GitHub 模拟登陆及动态爬取
+- [代码链接](chapter10/github.py)
+- 使用 request 库请求页面，使用 session 保持登陆状态
+- 使用 xpath 解析网页
+- 分析登录接口参数，模拟登录
