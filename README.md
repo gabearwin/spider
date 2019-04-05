@@ -60,3 +60,10 @@ Python3 网络爬虫实战
 - 使用 request 库请求页面，使用 session 保持登陆状态
 - 使用 xpath 解析网页
 - 分析登录接口参数，模拟登录
+
+### 搭建Cookies池[以登录新浪微博为例] *
+- [代码链接](https://github.com/gabearwin/CookiesPool)
+- 使用 selenium 自动登录新浪微博，以及使用动作链破解四宫格验证码
+- 使用 Redis 的 Hash 存储(用户名，密码)和(用户名，Cookie)
+- 使用 flask 提供 API 服务，获取随机 Cookie 值
+- 使用三个线程分别用来获取 Cookie、验证 Cookie、提供 API 服务
