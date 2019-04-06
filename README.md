@@ -80,3 +80,9 @@ Python3 网络爬虫实战
 - 使用 items 定义要提取的信息结构体
 - 使用 spider 解析页面以及生成下一页请求
 - 使用 pipelines 对结果过滤，以及存储到 MongoDB 中
+
+### Scrapy初始--爬取 Image360 网站
+- [代码链接](chapter13/pipeline/pipeline/spiders/images.py)
+- 自定义初始请求动作
+- 继承 ImagesPipeline，实现图片下载
+- 使用 pipelines 将结果存储到 MongoDB 和 MySQL 中
