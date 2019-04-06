@@ -67,3 +67,10 @@ Python3 网络爬虫实战
 - 使用 Redis 的 Hash 存储(用户名，密码)和(用户名，Cookie)
 - 使用 flask 提供 API 服务，获取随机 Cookie 值
 - 使用三个线程分别用来获取 Cookie、验证 Cookie、提供 API 服务
+
+### 去哪儿攻略爬取
+- [代码链接](chapter12/qunar.py)
+- 使用 pyspider 爬虫框架可视化爬取
+- 自动爬取下一页，内置 pyquery 等解析库
+- 可视化开启任务以及查看任务状态，导出爬取结果
+- 框架详细功能介绍请看[链接](https://github.com/binux/pyspider)
