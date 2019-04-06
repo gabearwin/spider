@@ -14,7 +14,7 @@ headers = {
     'X-Requested-With': 'XMLHttpRequest',
 }
 client = MongoClient('mongodb://localhost:27017/')
-db = client['weibo']
+db = client['spider']
 collection = db['weibo']
 max_page = 10
 

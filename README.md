@@ -74,3 +74,9 @@ Python3 网络爬虫实战
 - 自动爬取下一页，内置 pyquery 等解析库
 - 可视化开启任务以及查看任务状态，导出爬取结果
 - 框架详细功能介绍请看[链接](https://github.com/binux/pyspider)
+
+### Scrapy初始--爬取 quotes 网站
+- [代码链接](chapter13/tutorial/tutorial/spiders/quotes.py)
+- 使用 items 定义要提取的信息结构体
+- 使用 spider 解析页面以及生成下一页请求
+- 使用 pipelines 对结果过滤，以及存储到 MongoDB 中

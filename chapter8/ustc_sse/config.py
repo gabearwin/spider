@@ -2,7 +2,7 @@
 
 # MongoDB 相关配置
 MONGO_URL = 'localhost'
-MONGO_DB = 'ustc'
+MONGO_DB = 'spider'
 MONGO_COLLECTION = 'news'
 
 # 邮箱发信相关配置

@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 
 MONGO_URL = 'localhost'
-MONGO_DB = 'taobao'
+MONGO_DB = 'spider'
 MONGO_COLLECTION = 'products'
 
 KEYWORD = 'ipad'
