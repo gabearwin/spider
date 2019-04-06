@@ -86,3 +86,9 @@ Python3 网络爬虫实战
 - 自定义初始请求动作
 - 继承 ImagesPipeline，实现图片下载
 - 使用 pipelines 将结果存储到 MongoDB 和 MySQL 中
+
+### Scrapy进阶--结合 Selenium 爬取淘宝搜索页
+- [代码链接](chapter13/scrapyselenium/scrapyselenium/spiders/taobao.py)
+- 在 spider 中自定义初始请求动作，使用 xpath 解析页面
+- 在 middlewares 中使用 selenium 完成请求
+- 在 pipelines 中将结果存储到 MongoDB
