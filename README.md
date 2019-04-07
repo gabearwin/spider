@@ -92,3 +92,22 @@ Python3 网络爬虫实战
 - 在 spider 中自定义初始请求动作，使用 xpath 解析页面
 - 在 middlewares 中使用 selenium 完成请求
 - 在 pipelines 中将结果存储到 MongoDB
+
+### Scrapy进阶--抽象通用爬虫[以爬取中华网新闻为例]
+- [代码链接](chapter13/universal/run.py)
+- 定义爬虫站点配置 JSON 文件
+    - `spider` 指定使用 spider 的名称
+    - `settings` 为此 spider 自定义配置
+    - `start_urls` 爬虫起始链接
+    - `allowed_domains` 允许爬取的站点
+    - `rules` 站点爬取规则
+    - `item` 站点提取规则
+- 在通用 spider 中对上面配置参数初始化，并提取 item
+- 接入新的爬虫 china 的步骤
+    - 配置 `universal.configs.china.json`，最基本且必须的配置
+    - 配置 `universal.configs.rules.py`，定义规则
+    - 配置 `universal.configs.urls.py`，定义爬虫起始链接，可选
+    - 配置 `universal.loaders.py`，定义提取对象的处理
+    - 配置 `universal.items.py`，定义提取对象
+    - 配置 `universal.middlewares.py` 和 `universal.pipelines.py` 等中间件，可选
+    - 执行 `python run.py china` 启动项目
