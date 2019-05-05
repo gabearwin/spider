@@ -6,6 +6,12 @@ Python3 网络爬虫实战
 - re库，正则获取DOM节点数据
 - 写入文件
 
+### 美团外卖商家信息爬取(指定经纬度)
+- [代码链接](chapter3/meituan_waimai.py)
+- 拼装 Headers 头信息
+- requests库，获取JSON数据
+- 写入 CSV 文件
+
 ### 新浪个人微博爬取
 - [代码链接](chapter6/weibo.py)
 - 直接分析使用 Ajax 返回的 JSON 数据
