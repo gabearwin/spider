@@ -154,6 +154,6 @@ if __name__ == '__main__':
         for gzh in GZHLIST:
             print("开始爬取公众号：" + gzh)
             get_content(gzh)
-            print("爬取完成")
+            print("公众号{}爬取完成".format(gzh))
     except Exception as e:
         print(str(e))
