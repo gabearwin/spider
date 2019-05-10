@@ -28,7 +28,7 @@ Python3 网络爬虫实战
 
 ### 豆瓣图书按照标签爬取图书信息
 - [代码链接](chapter6/douban.py)
-- 使用 request 库请求页面
+- 使用 requests 库请求页面
 - 使用 pyquery 库解析 DOM 节点数据
 - 写入 CSV 文件
 
@@ -37,6 +37,12 @@ Python3 网络爬虫实战
 - 使用 selenium 自动搜索和翻页
 - 使用 pyquery 库解析 DOM 节点数据
 - 使用 pymongo 库存储数据到 MongoDB
+
+### 微信公众平台接口爬取指定公众号所有文章
+- [代码链接](chapter8/weixin.py)
+- 使用 selenium 自动登录，并保存 cookie 信息
+- 使用 requests 请求接口，解析 JSON 数据
+- 写入 CSV 文件
 
 ### 软院信息化平台通知爬取
 - [代码链接](chapter8/ustc_sse/ustc_sse.py)
@@ -63,7 +69,7 @@ Python3 网络爬虫实战
 
 ### GitHub 模拟登陆及动态爬取
 - [代码链接](chapter10/github.py)
-- 使用 request 库请求页面，使用 session 保持登陆状态
+- 使用 requests 库请求页面，使用 session 保持登陆状态
 - 使用 xpath 解析网页
 - 分析登录接口参数，模拟登录
 
